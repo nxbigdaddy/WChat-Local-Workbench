@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-11",
+  "status": "usable_with_manual_remark_workflow",
+  "environment": {
+    "python": "3.12.8",
+    "PySide6": "6.8.2.1",
+    "wechat": "4.1.13.65"
+  },
+  "synthetic_checks": {
+    "application_tests": {"passed": 36, "failed": 0},
+    "wal_tests": {"passed": 16, "failed": 0},
+    "total_passed": 52,
+    "native_gui_smoke": "passed",
+    "native_demo_visual_inspection": "passed"
+  },
+  "live_checks": {
+    "contacts": "passed",
+    "contact_cache_entities": 9391,
+    "native_gui_contact_render": "passed",
+    "message_shards_read": 3,
+    "message_shards_detected": 3,
+    "keyword_match_validation": "passed",
+    "cached_page_equality": "passed",
+    "automatic_wechat_remark_write": "blocked",
+    "real_remark_change_and_readback": "not_run",
+    "mobile_history_completeness": "not_run",
+    "media_attachment_loading": "not_run"
+  },
+  "remarks": "Draft editing and source-read comparison are implemented. Saving the actual remark must be done by the user in WeChat. Current business UI controls are unavailable for reliable automatic writing.",
+  "evidence": [
+    "gui-reader-live.json",
+    "gui-live-ui.json",
+    "gui-smoke.json",
+    "gui-demo.png"
+  ],
+  "private_contact_or_message_values_in_report": false,
+  "wechat_data_modified_during_testing": false
+}

@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+tools/vendor/
+reports/gui-demo*.png
+reports/gui-smoke*.json
